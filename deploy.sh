@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 
 # If a command fails then the deploy stops
 set -e
