@@ -1,5 +1,4 @@
-#
-/bin/sh
+#!/bin/bash
 
 # If a command fails then the deploy stops
 set -e
@@ -9,6 +8,8 @@ printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 # Build the project.
 hugo -t  book # if using a theme, replace with `hugo -t <YOURTHEME>`
 
+# add site
+# git submodule add -b master https://github.com/santino-yanz/santino-yanz.github.io.git public
 # Go To Public folder
 cd public
 
